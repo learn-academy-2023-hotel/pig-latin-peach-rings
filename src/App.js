@@ -42,39 +42,31 @@ const App = () => {
       
           if(vowelsArray.includes(eachWord[0])){
             return eachWord + 'way' 
-          }else if(vowelsArray.includes()){ 
-            return eachWord.slice()//where vowel starts) + .push + 'ay' //squire move squ to move to the end of the word + ay = return iresquay
+          } else if(eachWord.includes("qu")){ 
+            let indexOfQ = eachWord.indexOf("q") + 2
+
+            let constToQ = eachWord.slice(0, indexOfQ)
+            let newWord = eachWord.slice(indexOfQ)
+            return newWord + constToQ + "ay" 
+            // line 43) calls the data within "vowelsArray" then see's if eachWord includes a voewl at the first index.
+            //line 44) returns apple + way, output: appleway
+            //line 45-49) creating a new conditional statement determing if eachWord has "qu". we are gonna create a few variables in case it does. 
+            //line 46) Determines the first index in which "q" is found. Plus 2 because we're going over 2 index's to find "qu"
+            //line 48) ConsToQ is slicing the first index until indexOfQ is met.
+            // line 49) create a new variable newWord to keep everything you just sliced.
+            // line 50 you call the variables, newWord + constToQ and adding the string "ay". 
+          } else if (eachWord.includes("y"))  {
+            let indexOfY = eachWord.indexOf("y")
+            let constToY = eachWord.slice(0, indexOfY)
+            let newWordY = eachWord.slice(indexOfY)
+            
+            return newWordY + constToY + "ay"
+            // We want the code to see if there's no other vowels then y in a word and return that word with "ay" added to the end.
+              // return 
+
           }
         
-          new array = []
-        for (let i < 0; i< eachWord.length, i++){
-          if 
-        }
-        retun new Array
-        .push(value)
-
-        whatever is sliced gets put into a new array
-
-        equals -> squirrel -> pulls out qu into a new array 
         
-
-        newArray = [q, u]
-          // if (eachWord[0] === vowelsArray[0]]{
-          //   return 
-          // })
-      
-      
-    //    if (if word === vowel{
-    //     return every letter before that vowel to be pushed to the end of the word + concat ay ex: eachPay Peach -> each (input method to add every word to the end) = eachP +  .concat or + 'ay' eachPay
-    //   } else if (if vowel index === 0){
-    //     return concat the string yay to the end of the word
-    //   } else if (if the word only includes 1 y)
-    //   return every letter before that vowel to be pushed to the end of the word + concat ay ex: eachPay
-    // }else if ( word !== vowel){
-    //   return word
-    
-
-
             // ACTION ITEM: this return will be the output of your Pig Latin'd code
 
             // pulling out vowel + charAt + slice + ay
