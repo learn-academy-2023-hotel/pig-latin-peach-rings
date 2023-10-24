@@ -5,7 +5,7 @@ import butcherPigImage from "./assets/butcherPig.jpeg"
 const App = () => {
   // ACTION ITEM: to make the development process easier there are some preassigned words in the input field, when you are ready for your full user experience delete the test words passed to useState and pass an empty string
   const [userInput, setUserInput] = useState(
-    "apple through queen squeal fry fluent"
+    ""
   )
   const [inputTranslated, setInputTranslated] = useState("")
 
@@ -32,8 +32,16 @@ const App = () => {
       console.log("vowelsArray:", vowelsArray)
 
       // ACTION ITEM: your Pig Latin logic goes here!
+      const pigLatin = (vowelsArray) => {
+        return vowelsArray.join('').charAt(0) + vowelsArray.slice(0)
+        // if(indexOf(vowels) >  )
+      }
+      console.log(pigLatin(vowelsArray))
+      // console.log('peach ring'.charAt(0))
+      // console.log('peach ring'.slice(1))
 
-      // ACTION ITEM: this return will be the output of your Pig Latin'd code
+
+            // ACTION ITEM: this return will be the output of your Pig Latin'd code
       return eachWord
     })
 
