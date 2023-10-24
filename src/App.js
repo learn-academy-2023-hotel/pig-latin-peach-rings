@@ -21,7 +21,7 @@ const App = () => {
 
       // NO MODIFICATION NEEDED: this code will look at each word and identify the vowels
       const vowelsArray = eachWord.split("").filter((vowel) => {
-        return (
+        return ( 
           vowel === "a" ||
           vowel === "e" ||
           vowel === "i" ||
@@ -32,16 +32,53 @@ const App = () => {
       console.log("vowelsArray:", vowelsArray)
 
       // ACTION ITEM: your Pig Latin logic goes here!
-      const pigLatin = (vowelsArray) => {
-        return vowelsArray.join('').charAt(0) + vowelsArray.slice(0)
-        // if(indexOf(vowels) >  )
-      }
-      console.log(pigLatin(vowelsArray))
-      // console.log('peach ring'.charAt(0))
-      // console.log('peach ring'.slice(1))
+      
+      // Here we want to create a function that allows us to take the first instance of a vowel and then remove that vowel
+
+      // const pigLatin = (vowelsArray) => {
+        // return vowelsArray.join('').toLowerCase(0)
+      // }
+
+      
+          if(vowelsArray.includes(eachWord[0])){
+            return eachWord + 'way' 
+          }else if(vowelsArray.includes()){ 
+            return eachWord.slice()//where vowel starts) + .push + 'ay' //squire move squ to move to the end of the word + ay = return iresquay
+          }
+        
+          new array = []
+        for (let i < 0; i< eachWord.length, i++){
+          if 
+        }
+        retun new Array
+        .push(value)
+
+        whatever is sliced gets put into a new array
+
+        equals -> squirrel -> pulls out qu into a new array 
+        
+
+        newArray = [q, u]
+          // if (eachWord[0] === vowelsArray[0]]{
+          //   return 
+          // })
+      
+      
+    //    if (if word === vowel{
+    //     return every letter before that vowel to be pushed to the end of the word + concat ay ex: eachPay Peach -> each (input method to add every word to the end) = eachP +  .concat or + 'ay' eachPay
+    //   } else if (if vowel index === 0){
+    //     return concat the string yay to the end of the word
+    //   } else if (if the word only includes 1 y)
+    //   return every letter before that vowel to be pushed to the end of the word + concat ay ex: eachPay
+    // }else if ( word !== vowel){
+    //   return word
+    
 
 
             // ACTION ITEM: this return will be the output of your Pig Latin'd code
+
+            // pulling out vowel + charAt + slice + ay
+            // Here you want your word to come back .slice + ay at the end 
       return eachWord
     })
 
